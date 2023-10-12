@@ -1,0 +1,10 @@
+<h1>User Data</h1>
+
+<ul>
+  <% @user_data.each do |user| %>
+    <li>
+      <strong>Username:</strong> <%= user.name %><br>
+      <strong>Number of Posts:</strong> <%= user.post_count %>
+    </li>
+  <% end %>
+</ul>
