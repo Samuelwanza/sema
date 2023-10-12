@@ -1,0 +1,19 @@
+<h1><%= @user.name %></h1>
+<p><strong>Number of Posts:</strong> <%= @user.posts.count %></p>
+
+<h2>List of Posts</h2>
+<ul>
+  <% @user_posts.each do |post| %>
+    <li>
+      <strong>Post:</strong> <%= post.title %><br>
+      <p><%= post.text %></p>
+      <strong>Comments:</strong>
+      <ul>
+        <% post.comments.each do |comment| %>
+            <strong>User:</strong> <%= comment.user.name %><br>
+          <li><%= comment.text %></li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ul>

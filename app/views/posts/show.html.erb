@@ -1,0 +1,13 @@
+<h1><%= @user.name %></h1>
+
+<h2>Post: <%= @post.title %></h2>
+<p>Post: <%= @post.text %></p>
+<h3>Comments:</h3>
+<ul>
+  <% @post_comments.each do |comment| %>
+    <li>
+      <strong>User:</strong> <%= comment.user.name %><br>
+      <strong>Comment:</strong> <%= comment.text %>
+    </li>
+  <% end %>
+</ul>
