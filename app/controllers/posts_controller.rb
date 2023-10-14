@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     @user = current_user
     @post = @user.posts.build(post_params)
     if @post.save
-      redirect_to post_user_url(@user, @post), notice: 'Post created successfully.'
+      redirect_to posts_user_url(@user, @post), notice: 'Post created successfully.'
     else
       render :new
     end
