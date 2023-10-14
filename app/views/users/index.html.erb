@@ -1,10 +1,13 @@
-<h1>User Data</h1>
 
 <ul>
   <% @user_data.each do |user| %>
+    <%= puts user%>
     <li>
-      <strong>Username:</strong> <%= user.name %><br>
-      <strong>Number of Posts:</strong> <%= user.post_count %>
+      <%= image_tag image_path(user.photo) %>
+      <div>
+        <strong>Username:</strong> <%= user.name %><br>
+        <strong>Number of Posts:</strong> <%= user.post_count %>
+      </div>
     </li>
   <% end %>
 </ul>
