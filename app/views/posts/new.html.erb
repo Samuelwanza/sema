@@ -1,0 +1,16 @@
+  <%= form_with(model: [@user, @post], local: true, url: create_user_post_path(@user))  do |form| %>
+    <div class="form-group">
+      <%= form.label :title, "Title" %>
+      <%= form.text_field :title %>
+    </div>
+  
+    <div class="form-group">
+      <%= form.label :text, "Content" %>
+      <%= form.text_area :text %>
+    </div>
+  
+    <div class="actions">
+      <%= form.submit "Create Post" %>
+    </div>
+  <% end %>
+  

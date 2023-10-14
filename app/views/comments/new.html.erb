@@ -1,0 +1,10 @@
+<%= form_for [@user, @post, @comment], url: create_user_post_comment_path(@user, @post), method: :post do |f| %>
+    <div class="form-group">
+      <%= f.label :text, "Comment" %>
+      <%= f.text_area :text, class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Create Comment" %>
+    </div>
+  <% end %>
+  
