@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   def index
-    @user_data = User.select('name, COUNT(posts.id) AS post_count')
-      .joins(:posts)
-      .group('users.id')
+    @user_data = User.select('users.*, COUNT(posts.id) AS post_count')
+      .left_joins(:posts)
+      .group('users.id', 'users.name', 'users.photo')
   end
 
   def show
