@@ -13,12 +13,12 @@
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 \[Sema\] ](#-sema-)
   - [🛠 Built With ](#-built-with-)
+    - [Tech Stack](#-built-with-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
-    - [Live Demo](#Demo)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -83,9 +83,8 @@ Install this project with:
   cd sema
   rails s
 ```
-<!--DEMO--->
-### Demo
-[]()
+
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
